@@ -1,0 +1,111 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+
+/* ---- isotope ---- */
+
+.grid, .small-grid {
+  background: #fff;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+/*  display: block;
+*/  clear: both;
+}
+
+.small-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+
+.grid-sizer-small,
+.grid-item-small {
+  width: 33.3%;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  float: left;
+  padding: .75%;
+  padding-right:20%;
+}
+
+.grid-item-small {
+  float: left;
+  padding: .75%;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.grid-item-small img {
+  /*display: block;*/
+  max-width: 100%;
+}
+
+
+.grid-item--big { 
+  width: 66.666%
+}
+
+
+
+/* --- mountain pics --- */
+
+
+.mountain-pic {
+  position: relative;
+}
+
+.text-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: small;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 5px;
+  margin: 2%;
+  text-align: center;
+  vertical-align: center;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-right:1px; 
+  padding-left:1px;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  right: -40%;
+  transform: translate(-40%,-50%);
+  padding: 10px;
+}
+
+.mountain-pic:hover .text-content {
+  visibility: visible;
+  opacity: 1;
+}
